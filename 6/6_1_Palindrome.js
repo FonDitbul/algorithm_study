@@ -26,5 +26,21 @@ function solution(value){
     return true
 }
 
-console.log(solution(example_input_1))
-console.log(solution(example_input_2))
+function solution2(value){
+    let temp = value.toLowerCase()
+    let reg = /[^0-9a-z]/gi
+    if(reg.test(temp)){
+        temp = temp.replace(reg, "")
+    }else{
+        temp = temp;
+    }
+    let tempList = temp.split("")
+        while (tempList.length > 1) {
+        if (tempList.shift() !== tempList.pop()) {
+            return false
+        }
+    }
+    return true
+}
+console.log(solution2(example_input_1))
+console.log(solution2(example_input_2))
