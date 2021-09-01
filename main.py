@@ -1,16 +1,19 @@
-# This is a sample Python script.
+import collections
+import heapq
+import functools
+import itertools
+import re
+import sys
+import diff_match_patch
+import bisect
+from typing import *
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+example_input_1 = ""
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
+# template
+def solution(value):
+    result = ''
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    return True
