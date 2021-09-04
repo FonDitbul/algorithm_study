@@ -9,7 +9,7 @@ function solution(logs){
     let numberKey = [];
     logs.forEach((data, index)=>{
         let letterTest = data.split(' ');
-        const NumberCasting = +letterTest[1]
+        const NumberCasting = +letterTest[1] //string으로 받은 숫자, 숫자로 변경
         if(isNaN(NumberCasting)){
             letterKey.push(data)
         }else{
@@ -19,7 +19,7 @@ function solution(logs){
     letterKey.sort( (a,b)=>{
         let aa = a.substr(a.indexOf(' ') + 1);
         let bb = b.substr(b.indexOf(' ') + 1);
-        if(aa !== bb){
+        if(aa !== bb){ // key 제외 문자 비교
             return aa.localeCompare(bb);
         }else{
             return a.localeCompare(b);
