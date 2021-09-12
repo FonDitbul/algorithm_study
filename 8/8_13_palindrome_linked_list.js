@@ -40,3 +40,5 @@ var isPalindrome = function(head) {
 
 console.log(isPalindrome(example_input_1))
 console.log(isPalindrome(example_input_2))
+
+//출처 : https://leetcode.com/problems/palindrome-linked-list/
