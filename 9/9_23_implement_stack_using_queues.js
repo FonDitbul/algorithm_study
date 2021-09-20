@@ -12,7 +12,7 @@ class MyQueue {
         this.input.push(x);
     }
     pop(){
-        if(this.output.lenth) {
+        if(this.output.length) {
             while(this.input.length > 0){
                 this.output.push(this.input.pop())
             }
@@ -20,7 +20,7 @@ class MyQueue {
         return this.output.pop();
     }
     peek(){
-        if(this.output.lenth) {
+        if(this.output.length) {
             while(this.input.length > 0){
                 this.output.push(this.input.pop())
             }
